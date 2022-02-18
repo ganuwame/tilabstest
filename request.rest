@@ -1,0 +1,31 @@
+GET http://localhost:8888/api
+
+###
+
+GET http://localhost:8888/api/3
+
+###
+
+POST http://localhost:8888/api
+Content-Type: application/json
+
+{
+    "food_name" : "Kentang",
+    "calories" : 75,
+    "unit" : "100 gr"
+}
+
+###
+
+PATCH  http://localhost:8888/api/1
+Content-Type: application/json
+
+{
+    "food_name" : "Kentang Dengan Kulit",
+    "calories" : 72,
+    "unit" : "101 gr"
+}
+
+###
+
+DELETE  http://localhost:8888/api/1
